@@ -24,6 +24,7 @@ public class DebugLog {
 		if (Global.debug) {
 			Log.e(LOG_HEAD + tag, msg);
 		} else {
+            LogOperate.uploadExceptionError(tag + ":" + msg);
         }
 	}
 

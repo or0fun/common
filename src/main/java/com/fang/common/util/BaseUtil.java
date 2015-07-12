@@ -10,6 +10,8 @@ import android.app.PendingIntent;
 import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.media.AudioManager;
 import android.net.Uri;
 import android.provider.ContactsContract;
@@ -384,5 +386,25 @@ public class BaseUtil {
         } else {
             m.hideSoftInputFromWindow(txtSearchKey.getWindowToken(), 0);
         }
+    }
+
+
+    /**
+     * 获取版本名字
+     *
+     * @return
+     * @throws Exception
+     */
+    public static String getVersionName(Context context) {
+        String version = "1.0";
+        PackageManager packageManager = context.getPackageManager();
+        PackageInfo packInfo;
+        try {
+            packInfo = packageManager.getPackageInfo(context.getPackageName(),
+                    0);
+            version = packInfo.versionName;
+        } catch (PackageManager.NameNotFoundException e) {
+        }
+        return version;
     }
 }
