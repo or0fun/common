@@ -23,7 +23,8 @@ public class DebugLog {
 	public static void e(String tag, String msg) {
 		if (Global.debug) {
 			Log.e(LOG_HEAD + tag, msg);
-		}
+		} else {
+        }
 	}
 
 	public static void i(String tag, String msg) {
