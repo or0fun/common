@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/searchEdit"
+        style="@style/singleLineEdit"
+        android:layout_width="0dp"
+        android:layout_weight="1"></EditText>
+
+    <ImageView
+        android:id="@+id/clearBtn"
+        android:layout_width="@dimen/clearBtn_width"
+        android:layout_height="@dimen/clearBtn_height"
+        android:layout_marginRight="@dimen/smallmargin"
+        android:src="@drawable/clear"
+        android:visibility="gone"/>
+
+</LinearLayout>

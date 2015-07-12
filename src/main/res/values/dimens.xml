@@ -1,0 +1,47 @@
+<resources>
+
+    <dimen name="d30">30dp</dimen>
+    <dimen name="d40">40dp</dimen>
+    <dimen name="d50">50dp</dimen>
+
+    <dimen name="f30">30sp</dimen>
+    <dimen name="f40">40sp</dimen>
+    <dimen name="f50">50.0sp</dimen>
+
+    <dimen name="xxmargin">32dp</dimen>
+    <dimen name="xmargin">16dp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="smallmargin">5dp</dimen>
+    <dimen name="splitMargin">12.0dp</dimen>
+
+    <dimen name="titleTextSize">18.0sp</dimen>
+    <dimen name="subTextSize">14.0sp</dimen>
+
+    <dimen name="switch_width">58dp</dimen>
+    <dimen name="switch_height">30dp</dimen>
+
+    <dimen name="bigbuttonHeight">60.0dp</dimen>
+    <dimen name="buttonHeight">40.0dp</dimen>
+    <dimen name="subbuttonHeight">30.0dp</dimen>
+
+
+    <!-- 竖向隔线 -->
+    <dimen name="vSplitWidth">1.0dp</dimen>
+    <dimen name="vSplitHeight">25.0dp</dimen>
+    <dimen name="vSplitMarginTB">10.0dp</dimen>
+    <dimen name="vSplitMarginLR">1.0dp</dimen>
+
+    <!-- 横向隔线 -->
+    <dimen name="hSplitHeight">1.0dp</dimen>
+    <dimen name="hSplitMarginTB">1.0dp</dimen>
+    <dimen name="hSplitMarginLR">10.0dp</dimen>
+
+    <!-- 编辑框 -->
+    <dimen name="editTextSize">16.0sp</dimen>
+    <dimen name="editHeight">40.0dip</dimen>
+    <dimen name="MultiEditHeight">100.0dip</dimen>
+    <dimen name="bigMultiEditHeight">200.0dip</dimen>
+    <dimen name="clearBtn_width">25dp</dimen>
+    <dimen name="clearBtn_height">25dp</dimen>
+
+</resources>

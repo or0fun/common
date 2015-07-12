@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+<!--declare-styleable：自定义属性的值  -->  
+    <declare-styleable name="CustomSwitchPreference">
+        <attr name="title" format="string" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="titleTextColor" format="color" />
+        <attr name="summary" format="string" />
+        <attr name="summaryTextSize" format="dimension" />
+        <attr name="summaryTextColor" format="color" />
+        <attr name="defaultValue" format="string" />
+        <attr name="key" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomEditText">
+        <attr name="hintText" format="string"/>
+        <attr name="clearBtn" format="boolean" />
+    </declare-styleable>
+</resources> 

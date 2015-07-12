@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ff1874CD</color>   
+    <color name="green">#458B00</color>
+
+    <color name="focus">#28bb0e</color>
+
+    <!-- 主界面背景色 -->
+    <color name="main_background">#FFEBEBEB</color>
+    <!-- 水印色 -->
+    <color name="hint">#ff7f7f7f</color>
+    <!-- 列表分割线 -->
+    <color name="divider">#ffcdcdcd</color>
+    <!-- 标题栏背景色 -->
+    <color name="title_backgound">#ff262626</color>
+    <!-- 未接 -->
+    <color name="missed">#CD2626</color>
+    <!-- 呼入 -->
+    <color name="incoming">#4C79F9</color>
+    <!-- 呼出 -->
+    <color name="outgoing">#0BA541</color>
+    
+    <color name="purple">#ff463265</color>
+    <!-- 灰色 -->
+    <color name="gray">#ffe7e5dc</color>
+    <color name="stroke">#ffa8abad</color>
+
+    <color name="button">#ff1874CD</color>
+    <!-- 主色调 -->
+    <color name="background">#FF29A3CB</color>
+
+    <color name="body">#ff1d1d1d</color>
+    <color name="separate">#ffc0c3c4</color>
+    <color name="number">#ff0000ff</color>
+
+    <color name="alpha_bg">#ff333333</color>
+    <!-- 服务号码 -->
+    <color name="number_service">#838B8B</color>
+    <color name="call_record_list_background">#FFdcdcdc</color>
+    
+    <!-- 来电弹窗背景色 -->
+    <color name="incoming_dialog_background">#00B2EE</color>
+    
+    <!--dialog中按钮字体颜色 -->
+    <color name="btntextcolor">#ff1E90FF</color>
+
+    <!-- 半透明背景色 -->
+    <color name="light_black">#99000000</color>
+
+    <!-- 主按钮 -->
+    <drawable name="main_normal">@color/background</drawable>
+    <drawable name="main_pressed">#ff1884DF</drawable>
+    <!-- icon按钮 -->
+    <drawable name="icon_normal">@color/title_backgound</drawable>
+    <drawable name="icon_pressed">#ff191919</drawable>
+    <!-- 子按钮 -->
+    <drawable name="sub_pressed">#ff463265</drawable>
+    <drawable name="sub_normal">#aa463265</drawable>
+</resources>
