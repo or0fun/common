@@ -147,8 +147,9 @@ public class ServerUtil implements Runnable {
                         // 解密
                         result.setValue(defaultAesutil.decrypt(r.getValue()));
 
-                        //日志收集
-                        if (r.getResultCode() != NetRequestResultCode.HTTP_OK) {
+                        //日志收集,请求失败而且不是REQUEST_ERROR请求
+                        if (r.getResultCode() != NetRequestResultCode.HTTP_OK &&
+                                request.getValue().getName().equals(LogOperate.REQUEST_ERROR)) {
                             LogOperate.uploadRequestError("request:" + request.toString()
                                     + ", response:" + r.toString());
                         }
