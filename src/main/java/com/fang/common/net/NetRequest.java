@@ -40,7 +40,7 @@ public class NetRequest {
     @Override
     public String toString() {
         if (null != value) {
-            return url + ";" + value.getName() + ":" + value.getName();
+            return url + ";" + value.getName() + ":" + value.getValue();
         } else {
             return url + ";value is null";
         }
