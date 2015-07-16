@@ -33,6 +33,6 @@ public class CustomConstant {
 
     /** 最大线程数 */
     public static final int MAX_THREAD_COUNT = 10;
-	
+
 }
 
