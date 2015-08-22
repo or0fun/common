@@ -363,7 +363,7 @@ public class MIUIHelper {
 	 */
 	private void startActivity(Context context, Intent intent) {
 		if (isIntentAvailable(context, intent)) {
-			context.startActivity(intent);
+			BaseUtil.startActivity(context, intent);
 		}else {
 			DebugLog.d(TAG, "intent is illegal");
 		}

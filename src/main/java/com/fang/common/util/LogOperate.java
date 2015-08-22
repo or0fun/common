@@ -5,6 +5,7 @@ import android.content.Context;
 import com.fang.common.net.NetRequestListener;
 import com.fang.common.net.NetRequestResult;
 import com.fang.common.net.NetRequestResultCode;
+import com.umeng.analytics.MobclickAgent;
 
 
 public class LogOperate {
@@ -23,6 +24,7 @@ public class LogOperate {
 	 */
 	static public void updateLog(final Context context, final String code) {
 		ServerUtil.getInstance(context).request(CODE, code, null);
+        MobclickAgent.onEvent(context, code);
 	}
 
     /**

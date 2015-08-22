@@ -95,7 +95,7 @@ public class BaseUtil {
 		Intent intent = new Intent(Intent.ACTION_CALL, uri);
 		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP
 				| Intent.FLAG_ACTIVITY_NEW_TASK);
-		context.startActivity(intent);
+        BaseUtil.startActivity(context, intent);
 	}
 
 	/**
@@ -108,7 +108,7 @@ public class BaseUtil {
 		if (null != intent) {
 			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP
 					| Intent.FLAG_ACTIVITY_NEW_TASK);
-			context.startActivity(intent);
+            startActivity(context, intent);
 		}
 	}
 
@@ -120,7 +120,7 @@ public class BaseUtil {
 	 */
 	public static void startActivity(Context context, Class<?> name) {
 		Intent intent = new Intent(context, name);
-		context.startActivity(intent);
+		startActivity(context, intent);
 	}
 
 	/**
@@ -135,11 +135,11 @@ public class BaseUtil {
 
 		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP
 				| Intent.FLAG_ACTIVITY_NEW_TASK);
-		context.startActivity(intent);
+        BaseUtil.startActivity(context, intent);
 	}
 
 	/**
-	 * 打开链接
+	 * 打开链接 用系统的浏览器
 	 * 
 	 * @param context
 	 * @param url
@@ -152,7 +152,7 @@ public class BaseUtil {
 
 		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP
 				| Intent.FLAG_ACTIVITY_NEW_TASK);
-		context.startActivity(intent);
+		startActivity(context, intent);
 	}
 
 	/**
@@ -406,5 +406,23 @@ public class BaseUtil {
         } catch (PackageManager.NameNotFoundException e) {
         }
         return version;
+    }
+
+    public static long parseLong(String str) {
+        long l = 0;
+        try {
+            l = Long.parseLong(str);
+        } catch (Throwable throwable) {
+            DebugLog.e(TAG, throwable);
+        }
+        return l;
+    }
+
+    public static void startActivity(Context context, Intent intent) {
+        try {
+            context.startActivity(intent);
+        } catch (Throwable throwable) {
+            DebugLog.e(TAG, throwable);
+        }
     }
 }

@@ -34,5 +34,7 @@ public class CustomConstant {
     /** 最大线程数 */
     public static final int MAX_THREAD_COUNT = 10;
 
+    public static final String UMENG_KEY = "55a7c3e567e58e3a34003ed5";
+
 }
 
